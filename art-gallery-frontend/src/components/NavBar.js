@@ -1,9 +1,9 @@
-import Search from './Search'
+import Search from './Search';
 
-functon() {
+function NavBar({searchArt,handleSearch}) {
     return(
         <div>
-            <Search /> 
+            <Search searchArt={searchArt} handleSearch={handleSearch} /> 
         </div>
     )
 }
