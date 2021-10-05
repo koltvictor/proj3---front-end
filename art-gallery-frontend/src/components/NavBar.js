@@ -1,11 +1,9 @@
-import React from 'react'
-import Search from './Search';
+import React from 'react';
 
-
-function NavBar({searchArt,handleSearch}) {
+function NavBar() {
     return(
         <div className="navBar">
-            <Search searchArt={searchArt} handleSearch={handleSearch} /> 
+            
         </div>
     )
 }
