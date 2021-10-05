@@ -42,6 +42,11 @@ body{
   box-shadow: 8 8px 16px 0 #000000;
 }
 
+.detailsImg {
+  height: 300px;
+  width: 250px;
+}
+
 .navBar {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
