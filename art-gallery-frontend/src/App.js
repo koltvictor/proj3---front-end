@@ -25,7 +25,8 @@ function App() {
   }
 
   const displayedArts = arts.filter(art => {
-    return art.artist.toLowerCase().includes(searchArt.toLowerCase())
+    return art.artist.toLowerCase().includes(searchArt.toLowerCase()) ||
+    art.title.toLowerCase().includes(searchArt.toLowerCase())
   })
 
   return (
