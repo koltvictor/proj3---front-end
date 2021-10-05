@@ -1,9 +1,8 @@
 import React from 'react'
 import ArtCard from './ArtCard'
 
-function ArtList({arts}) {
 
-    console.log(arts)
+function ArtList({arts}) {
 
     return (
         <div className="cardsLayout">
