@@ -27,7 +27,7 @@ function Appointment() {
                 Desired Time:
                 <input type="time" time="time" />
             </label><br /><br />
-            <button type="submit">Submit</button>
+            <button type="submit">Request</button>
         </form>
       </div>
   )
