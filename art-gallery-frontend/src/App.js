@@ -8,6 +8,7 @@ import Header from './components/Header'
 import ArtList from './components/ArtList'
 import NavBar from './components/NavBar'
 import MyArt from './components/MyArt'
+import Home from './components/Home'
 import Search from './components/Search'
 
 function App() {
@@ -37,11 +38,13 @@ function App() {
       <Header />
 
       <Switch>
+        <Route exact path ="/">
+          <Home />
+        </Route>  
         <Route exact path = "/gallery">
           <NavBar /> 
           <Search searchArt={searchArt} handleSearch={handleSearch}/>
           <ArtList arts={displayedArts}/> 
-          
         </Route>
         <Route exact path = "/myArt-cart"  >
         <MyArt /> 

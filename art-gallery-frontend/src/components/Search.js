@@ -1,3 +1,5 @@
+import React from "react";
+
 function Search({searchArt, handleSearch}) {
     return(
         <div id='searchbar'> 
