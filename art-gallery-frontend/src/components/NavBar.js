@@ -7,7 +7,8 @@ function NavBar() {
             <NavLink className="homeNav" exact to="/">Home</NavLink>
             <NavLink className="galleryNav" to="/gallery">Our Gallery</NavLink>
             <NavLink className="apptNav" to="/appointments">
-            </NavLink>
+            Make Appointment</NavLink>
+            <NavLink className="detailsNav" to="/gallery/:id"></NavLink>
         </nav>
     )
 }
