@@ -8,6 +8,7 @@ import Header from './components/Header'
 import ArtList from './components/ArtList'
 import NavBar from './components/NavBar'
 import MyArt from './components/MyArt'
+import Home from './components/Home'
 
 function App() {
   const [searchArt, setSearchArt] = useState('')
@@ -36,6 +37,9 @@ function App() {
       <Header />
 
       <Switch>
+        <Route exact path ="/">
+          <Home />
+        </Route>  
         <Route exact path = "/gallery">
           <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
           <ArtList arts={displayedArts}/> 
