@@ -1,3 +1,23 @@
+.cardsLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 5px;
+  margin: 10px;
+  border: solid #63627d;
+  border-width: .5em;
+  text-align: center;;
+  box-shadow: 0 8px 16px 0 #0B472D
+}
+
+.artCards {
+  border: solid #000000;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px 0 #0B472D;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .App {
   text-align: center;
 }
