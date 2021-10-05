@@ -1,10 +1,21 @@
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .header {
-    color: #222;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #282c34;
-    color: aqua;
+    color: rgb(160, 181, 181);
+    padding: 5px
+}
+
+.form {
+  
+  padding: 10px;
+  text-align: center;
+  align-self: center;
 }
 
 .cardsLayout {
@@ -29,6 +40,26 @@
 
 .cardImg {
   box-shadow: 8 8px 16px 0 #000000;
+}
+
+.navBar {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 22px;
+  color: black;
+  padding: 1em;
+}
+
+.homeNav {
+  padding: 10px;
+}
+
+.galleryNav {
+  padding: 10px;
+}
+
+.apptNav {
+  padding: 10px;
 }
 
 .App {

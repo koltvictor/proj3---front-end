@@ -1,68 +1,38 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function Appointment() {
 
+    function handleSubmit(e) {
+        alert('A request was submitted: ');
+        e.preventDefault();
+      }
 
-  return (
-    <section>
-      <form onSubmit={handleSubmit} className="form" autoComplete="off">
-        <h3>Add New Project</h3>
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-        />
-        {name.length === 0 ? (
-          <p style={{ color: "red" }}>You must provide a name</p>
-        ) : null}
+  return(
+      <div className="wrapper">
+          <h2>Submission Application for Appointment</h2>
+        <form className="form" onSubmit={handleSubmit}>
+            <label>
+                Name:
+                <input type="text" name="name" />
+            </label><br /><br />
+            <label>
+                Email:
+                <input type="text" email="email" />
+            </label><br /><br />
+            <label>
+                Desired Date:
+                <input type="date" date="date" />
+            </label><br /><br />
+            <label>
+                Desired Time:
+                <input type="time" time="time" />
+            </label><br /><br />
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+  )
 
-        <label htmlFor="about">About</label>
-        <textarea
-          id="about"
-          name="about"
-          value={about}
-          onChange={(event) => setAbout(event.target.value)}
-        />
-
-        <label htmlFor="phase">Phase</label>
-        <select
-          name="phase"
-          id="phase"
-          value={phase}
-          onChange={(event) => setPhase(parseInt(event.target.value))}
-        >
-          <option value="1">Phase 1</option>
-          <option value="2">Phase 2</option>
-          <option value="3">Phase 3</option>
-          <option value="4">Phase 4</option>
-          <option value="5">Phase 5</option>
-        </select>
-
-        <label htmlFor="link">Project Homepage</label>
-        <input
-          type="text"
-          id="link"
-          name="link"
-          value={link}
-          onChange={(event) => setLink(event.target.value)}
-        />
-
-        <label htmlFor="image">Screenshot</label>
-        <input
-          type="text"
-          id="image"
-          name="image"
-          value={image}
-          onChange={(event) => setImage(event.target.value)}
-        />
-
-        <button type="submit">Add Project</button>
-      </form>
-    </section>
-  );
-        }
+}
 
 export default Appointment;

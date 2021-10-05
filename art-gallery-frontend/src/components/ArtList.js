@@ -3,6 +3,8 @@ import ArtCard from './ArtCard'
 
 function ArtList({arts}) {
 
+    console.log(arts)
+
     return (
         <div className="cardsLayout">
             {arts.map((art) => {

@@ -10,6 +10,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Search from './components/Search'
 import ArtDetail from './components/ArtDetail';
+import Appointment from './components/Appointment';
 
 function App() {
   const [searchArt, setSearchArt] = useState('')
@@ -20,8 +21,6 @@ function App() {
     .then((r) => r.json())
     .then(setArts);
   }, [])
-
-  console.log(arts)
 
   function handleSearch(e) {
     setSearchArt(e.target.value);
@@ -47,7 +46,12 @@ function App() {
           <ArtList arts={displayedArts}/> 
         </Route>
         <Route exact path = "/gallery/:id"  >
-        <ArtDetail /> 
+          <NavBar />
+          <ArtDetail /> 
+        </Route>
+        <Route exact path = "/appointment" >
+          <NavBar />
+          <Appointment />
         </Route>
       </Switch>
 
