@@ -18,6 +18,8 @@ function App() {
     .then(setArts);
   }, [])
 
+  console.log(arts)
+
   function handleSearch(e) {
     setSearchArt(e.target.value);
   }

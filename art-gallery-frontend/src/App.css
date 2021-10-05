@@ -1,8 +1,10 @@
 .header {
     color: #222;
-    font-family: NewTransport,Arial,sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #282c34;
+    color: aqua;
 }
 
 .cardsLayout {
@@ -14,15 +16,19 @@
   border: solid #63627d;
   border-width: .5em;
   text-align: center;;
-  box-shadow: 0 8px 16px 0 #0B472D
+  box-shadow: 0 8px 16px 0 #424845
 }
 
 .artCards {
   border: solid #000000;
   padding: 15px;
   background-color: #ffffff;
-  box-shadow: 0 8px 16px 0 #0B472D;
+  box-shadow: 0 8px 16px 0 #424845;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cardImg {
+  box-shadow: 8 8px 16px 0 #000000;
 }
 
 .App {

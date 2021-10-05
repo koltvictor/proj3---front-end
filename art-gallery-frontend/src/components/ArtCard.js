@@ -6,7 +6,7 @@ function ArtCard({art}) {
 
     return(
         <div className="artCards"> 
-            <img key={id} src={image} alt={title} height="200" width="200"/>
+            <img className="cardImg" key={id} src={image} alt={title} height="250" width="250"/>
             <h3>{artist}</h3>
             <h4>{title}</h4>
         </div>
