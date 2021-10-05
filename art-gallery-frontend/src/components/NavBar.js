@@ -1,11 +1,14 @@
+import React from 'react'
 import Search from './Search';
+
 
 function NavBar({searchArt,handleSearch}) {
     return(
-        <div>
+        <div className="navBar">
             <Search searchArt={searchArt} handleSearch={handleSearch} /> 
         </div>
     )
 }
 
-export default Search;
+export default NavBar;
+

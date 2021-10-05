@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import './App.css';
 
 //component imports
@@ -17,15 +18,15 @@ function App() {
     .then(setArts);
   }, [])
 
-  console.log(arts)
-
   function handleSearch(e) {
     setSearchArt(e.target.value);
   }
 
   return (
     <div className="App">
+
       <Header />
+      <NavBar />
       <ArtList arts={arts}/> 
       <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
       <MyArt /> 

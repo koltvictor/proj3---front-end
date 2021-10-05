@@ -1,4 +1,4 @@
-function Search( {handleSearch} ) {
+function Search({searchArt, handleSearch}) {
     return(
         <div id='searchbar'> 
             <input
@@ -6,6 +6,7 @@ function Search( {handleSearch} ) {
                 className='searchbar'
                 id="search"
                 placeholder="Search Art"
+                value={searchArt}
                 onChange={(e) => handleSearch(e)}
             />
             
