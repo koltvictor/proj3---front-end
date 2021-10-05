@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Route, Switch} from 'react-router-dom'
 
 import './App.css';
 
@@ -33,10 +34,17 @@ function App() {
     <div className="App">
 
       <Header />
-      <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
-      <ArtList arts={displayedArts}/> 
-      <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
-      <MyArt /> 
+
+      <Switch>
+        <Route exact path = "/gallery">
+          <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
+          <ArtList arts={displayedArts}/> 
+        </Route>
+        <Route exact path = "/myArt-cart"  >
+        <MyArt /> 
+        </Route>
+      </Switch>
+
     </div>
   );
 }
