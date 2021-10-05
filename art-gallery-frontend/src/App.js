@@ -24,12 +24,16 @@ function App() {
     setSearchArt(e.target.value);
   }
 
+  const displayedArts = arts.filter(art => {
+    return art.artist.toLowerCase().includes(searchArt.toLowerCase())
+  })
+
   return (
     <div className="App">
 
       <Header />
-      <NavBar />
-      <ArtList arts={arts}/> 
+      <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
+      <ArtList arts={displayedArts}/> 
       <NavBar searchArt={searchArt} handleSearch={handleSearch} /> 
       <MyArt /> 
     </div>
