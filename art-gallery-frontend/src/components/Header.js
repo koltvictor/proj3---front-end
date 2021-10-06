@@ -1,7 +1,7 @@
 import React from "react";
 
 function Header() {
-    const headerName= "NELSON MILOSCIA & ADAMS"
+    const headerName= "AMBIENT ART GALLERY"
     return (
         <>
             <div className="header">

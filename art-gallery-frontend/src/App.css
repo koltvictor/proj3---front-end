@@ -91,7 +91,19 @@ button {
 button:hover, .btn:focus {
   color: #fff;
   outline: 0;
-  box-shadow: 0 0 12em 12em #808ba5 inset;;
+  box-shadow: 0 0 12em 12em #919ab0 inset;;
+}
+
+.detailsArtist {
+  color: rgb(82, 93, 104);
+}
+
+.detailsTitle {
+  color: lightslategray;
+}
+
+.detailsText {
+  color: rgb(141, 156, 172)
 }
 
 .App {

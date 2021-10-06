@@ -2,15 +2,10 @@ import React from "react";
 
 function Appointment() {
 
-    function handleSubmit(e) {
-        alert('A request was submitted: ');
-        e.preventDefault();
-      }
-
   return(
       <div className="wrapper">
           <h2>Submission Application for Appointment</h2>
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form">
             <label>
                 Name:
                 <input type="text" name="name" />
