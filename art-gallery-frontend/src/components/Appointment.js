@@ -2,6 +2,8 @@ import React, {useState} from "react";
 
 function Appointment() {
 
+    const [appointments,setAppointments] = useState([])
+
     const [nameInput, setNameInput] = useState("")
     const [emailInput, setEmailInput] = useState("")
     const [dateInput, setDateInput] = useState("")
@@ -16,36 +18,47 @@ function Appointment() {
                     'Accept' : 'application/json',
                     'Content-Type' : 'application/json',
                 },
-                body : JSON.stringify()
+                body : JSON.stringify({
+                    name:nameInput,
+                    email:emailInput,
+                    date:dateInput,
+                    time:timeInput
+                })
             })
+        
             .then((r) => r.json())
-            .then()
+            .then((newAppointment) => handleAddAppointment(newAppointment))
         }
 
-  return(
-      <div className="wrapper">
-          <h2>Submission Application for Appointment</h2>
+    return(
+    <div className="wrapper">
+        <h2>Submission Application for Appointment</h2>
         <form className="form" onSubmit={handleSubmit}>
             <label>
                 Name:
-                <input type="text" name="name" value={nameInput} onChange={setNameInput} />
+                <input type="text" name="name" value={nameInput} onChange={e => setNameInput(e.target.value)}/>
             </label><br /><br />
             <label>
                 Email:
-                <input type="text" email="email" value={emailInput} onChange={setEmailInput}/>
+                <input type="text" email="email" value={emailInput} onChange={e => setEmailInput(e.target.value)}/>
             </label><br /><br />
             <label>
                 Desired Date:
-                <input type="date" date="date" value={dateInput} onChange={setDateInput}/>
+                <input type="date" date="date" value={dateInput} onChange={e => setDateInput(e.target.value)}/>
             </label><br /><br />
             <label>
                 Desired Time:
-                <input type="time" time="time" value={timeInput} onChange={setTimeInput}/>
+                <input type="time" time="time" value={timeInput} onChange={e => setTimeInput(e.target.value)}/>
             </label><br /><br />
             <button type="submit">Request</button>
         </form>
-      </div>
-  )
+    </div>
+)
+
+function handleAddAppointment(newAppointments) {
+    const updateAppointments = [...appointments,newAppointments];
+    setAppointments(updateAppointments)
+}
 
 }
 
