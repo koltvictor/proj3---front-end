@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 
-function Appointment() {
-
-    const [appointments,setAppointments] = useState([])
+function Appointment({onAddAppointment}) {
 
     const [nameInput, setNameInput] = useState("")
     const [emailInput, setEmailInput] = useState("")
@@ -19,7 +17,7 @@ function Appointment() {
                     'Content-Type' : 'application/json',
                 },
                 body : JSON.stringify({
-                    name:nameInput,
+                    userId: 1,
                     email:emailInput,
                     date:dateInput,
                     time:timeInput
@@ -27,7 +25,7 @@ function Appointment() {
             })
         
             .then((r) => r.json())
-            .then((newAppointment) => handleAddAppointment(newAppointment))
+            .then((newAppointment) => onAddAppointment(newAppointment))
         }
 
     return(
@@ -54,11 +52,6 @@ function Appointment() {
         </form>
     </div>
 )
-
-function handleAddAppointment(newAppointments) {
-    const updateAppointments = [...appointments,newAppointments];
-    setAppointments(updateAppointments)
-}
 
 }
 
