@@ -1,10 +1,19 @@
 body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #f3efed;
+  background-color: white;
+}
+
+.home{
+  background-image: url("http://ambientartprojects.com/Looking%20Up%20show/Looking%20Up%20install%20looking%20east.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   padding: 80px 50px;
   text-align: center;
@@ -15,7 +24,7 @@ body{
 
 .header {
   color: #131313;
-  background-color: #f3efed;
+  background-color: white;
   letter-spacing: .15em;
   text-shadow: 
     1px -1px 0 #767676, 
@@ -49,8 +58,15 @@ body{
     -28px 56px 1px #e4e3e2;
 }
 
+.footer{
+  height:200px;
+  background-image: linear-gradient(white, rgb(176, 182, 204));
+  font-size:24px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: lighter;
+}
+
 .form {
-  
   padding: 10px;
   text-align: center;
   align-self: center;
@@ -62,10 +78,8 @@ body{
   grid-gap: 1rem;
   padding: 5px;
   margin: 10px;
-  border: solid #63627d;
   border-width: .5em;
   text-align: center;;
-  box-shadow: 0 8px 16px 0 #424845
 }
 
 .artCards {
@@ -87,12 +101,6 @@ body{
     text-align: center;;
     box-shadow: 0 8px 16px 0 #424845
   }
-  
-  /* .appointmentCard {
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: column;
-  } */
 
 .wrapper {
     border: solid #000000;

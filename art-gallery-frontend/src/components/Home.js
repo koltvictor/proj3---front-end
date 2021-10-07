@@ -6,7 +6,13 @@ function Home () {
         <div className="home">
 
             <NavBar /><br/>
-            <img src = "https://media.timeout.com/images/103722907/750/562/image.jpg" alt="some title" />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <div className="footer" ><br />
+                By Appointment Only<br />
+                T - 702-454-2333<br />
+                F - 702-454-6333<br />
+                E - info@ambientartprojects.com<br />
+            </div>
             
         </div>
     )

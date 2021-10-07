@@ -23,16 +23,13 @@ function Appointment({onAddAppointment}) {
                     time:timeInput
                 })
             })
-        
             .then((r) => r.json())
             .then((newAppointment) => onAddAppointment(newAppointment))
         }
 
-    
-
     return(
     <div className="wrapper">
-        <h2>Submission Application for Appointment</h2>
+        <h2>Request Appointment</h2>
         <form className="form" onSubmit={handleSubmit}>
             <label>
                 Name:

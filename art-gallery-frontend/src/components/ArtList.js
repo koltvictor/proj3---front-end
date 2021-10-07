@@ -8,10 +8,13 @@ function ArtList({arts}) {
         <div className="cardsLayout">
             {arts.map((art) => {
                 return (
+                    <div>
+                    <br />
                     <ArtCard 
                     art={art}
                     key={art.id}
                     />
+                    </div>
                 )
             })}
         </div>

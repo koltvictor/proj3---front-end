@@ -15,8 +15,9 @@ function ArtDetail () {
 
     return(
         <div>
+            <br /><br /><br /><br />
             <img height="500" width="500" src={artShowing.image} alt={artShowing.title} />
-            <h2>{artShowing.artist}</h2>
+            <h2 className="detailsArtist">{artShowing.artist}</h2>
             <h2 className="detailsTitle">Title: {artShowing.title}</h2>
             <div className="detailsText">
             <h3>Medium: {artShowing.medium}</h3>
