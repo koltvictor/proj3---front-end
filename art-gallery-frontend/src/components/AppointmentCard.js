@@ -4,9 +4,6 @@ function AppointmentCard({appointment, deleteAppointment}) {
 
     const {id, email, date, time} = appointment
 
-    console.log(appointment)
-
-
     return(
         <div className="appointmentCard"> 
             <h3>{id}</h3>

@@ -28,6 +28,8 @@ function Appointment({onAddAppointment}) {
             .then((newAppointment) => onAddAppointment(newAppointment))
         }
 
+    
+
     return(
     <div className="wrapper">
         <h2>Submission Application for Appointment</h2>
@@ -48,7 +50,7 @@ function Appointment({onAddAppointment}) {
                 Desired Time:
                 <input type="time" time="time" value={timeInput} onChange={e => setTimeInput(e.target.value)}/>
             </label><br /><br />
-            <button type="submit">Request</button>
+            <button type="submit">REQUEST</button>
         </form>
     </div>
 )
