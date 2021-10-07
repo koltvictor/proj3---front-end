@@ -13,7 +13,7 @@ function AppointmentCard({appointment, deleteAppointment}) {
             <h4>{email}</h4>
             <h5>{date}</h5>
             <h5>{time}</h5>
-            <button onClick={deleteAppointment}> Delete Request </button>
+            <button onClick={event => deleteAppointment(id)}> Delete Request </button>
         </div>
     )
 }

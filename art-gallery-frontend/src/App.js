@@ -17,7 +17,6 @@ function App() {
   const [searchArt, setSearchArt] = useState('')
   const [arts, setArts] = useState([])
   const [appointments,setAppointments] = useState([])
-  const [apptItems, setApptItems] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:9292/gallery')
@@ -38,17 +37,16 @@ function App() {
     const updatedAppointmentArray = [...appointments, newAppointment]
     setAppointments(updatedAppointmentArray)}
 
-  function deleteAppointment(appointment){
-
-      setApptItems(apptItems.filter((x) => x.id !== appointment.id))
-
-  }
-
-
+    const deleteAppointment = (id) => {
+      fetch(`http://localhost:9292/appointment/${id}`, {
+        method: 'DELETE'
+      })
+      setAppointments(appointments.filter((x) => x.id !== id))
+    }
 
   const appointmentCards = appointments.map((appointment) => {
     return(
-      <AppointmentCard key={appointment.id} appointment={appointment} deleteAppointment = {deleteAppointment}/>
+      <AppointmentCard key={appointment.id} appointment={appointment} deleteAppointment={deleteAppointment}/>
       )
   })
 
