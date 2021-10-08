@@ -46,8 +46,9 @@ function Appointment({onAddAppointment}) {
             <label>
                 Desired Time:
                 <input type="time" time="time" value={timeInput} onChange={e => setTimeInput(e.target.value)}/>
-            </label><br /><br />
-            <button type="submit">REQUEST</button>
+            </label>
+            <br /><br />
+            <button type="submit">Send Request</button>
         </form>
     </div>
 )

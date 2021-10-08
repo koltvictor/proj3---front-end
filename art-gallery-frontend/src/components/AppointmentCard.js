@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function AppointmentCard({appointment, deleteAppointment}) {
 
     const {id, email, date, time} = appointment

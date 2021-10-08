@@ -5,7 +5,7 @@ body{
 
 .home{
   background-image: url("http://ambientartprojects.com/Looking%20Up%20show/Looking%20Up%20install%20looking%20east.jpg");
-  min-height: 500px;
+  min-height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,8 @@ body{
 
 .header {
   color: #131313;
-  background-color: white;
+  /* background-color: white; */
+  /* background-image: url("https://paradisestudiosart.com/wp-content/uploads/2015/04/IMG_0059-1030x772.jpg"); */
   letter-spacing: .15em;
   text-shadow: 
     1px -1px 0 #767676, 
@@ -94,7 +95,7 @@ body{
     display: inline-block;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
-    padding: 5px;
+    padding: 15px;
     margin: 10px;
     border: solid #63627d;
     border-width: .5em;
@@ -156,16 +157,27 @@ body{
 }
 
 button {
-  background-color: transparent;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1em;
-  cursor: pointer;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #ffffff 5%, #2772b3 100%);
+	background-color:#b6c9e9;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
 }
-
-button:hover, .btn:focus {
-  color: #fff;
-  outline: 0;
-  box-shadow: 0 0 12em 12em #919ab0 inset;;
+button:hover {
+	background:linear-gradient(to bottom, #245c8c 5%, #b6c9e9 100%);
+	background-color:#245c8c;
+}
+button:active {
+	position:relative;
+	top:1px;
 }
 
 .detailsArtist {
