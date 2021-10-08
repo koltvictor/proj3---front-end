@@ -6,6 +6,7 @@ function Appointment({onAddAppointment}) {
     const [emailInput, setEmailInput] = useState("")
     const [dateInput, setDateInput] = useState("")
     const [timeInput, setTimeInput] = useState("")
+    
 
     function handleSubmit(e) {
         e.preventDefault()

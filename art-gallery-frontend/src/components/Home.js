@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 
 function Home () {
     return(
         <div className="home">
 
-            <NavBar /><br/>
+            <br/>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div className="footer" ><br />
                 By Appointment Only<br />

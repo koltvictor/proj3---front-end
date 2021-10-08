@@ -6,7 +6,6 @@ import './App.css';
 //component imports
 import Header from './components/Header'
 import ArtList from './components/ArtList'
-import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Search from './components/Search'
 import ArtDetail from './components/ArtDetail';
@@ -57,22 +56,18 @@ function App() {
     <div className="App">
 
       <Header />
-
       <Switch>
         <Route exact path ="/">
           <Home />
         </Route>  
         <Route exact path = "/gallery">
-          <NavBar /> 
           <Search searchArt={searchArt} handleSearch={handleSearch}/>
           <ArtList arts={displayedArts}/> 
         </Route>
         <Route exact path = "/gallery/:id"  >
-          <NavBar />
           <ArtDetail /> 
         </Route>
         <Route exact path = "/appointment" >
-          <NavBar />
           <Appointment onAddAppointment={handleAddAppointment} />
           {appointmentCards}
         </Route>

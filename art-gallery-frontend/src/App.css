@@ -15,17 +15,14 @@ body{
 .header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
-  padding: 80px 50px;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-    padding: 5px
+  
 }
 
 .header {
   color: #131313;
-  /* background-color: white; */
-  /* background-image: url("https://paradisestudiosart.com/wp-content/uploads/2015/04/IMG_0059-1030x772.jpg"); */
   letter-spacing: .15em;
   text-shadow: 
     1px -1px 0 #767676, 
@@ -61,7 +58,7 @@ body{
 
 .footer{
   height:200px;
-  background-image: linear-gradient(white, rgb(176, 182, 204));
+  background-color: white;
   font-size:24px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: lighter;
@@ -100,8 +97,12 @@ body{
     border: solid #63627d;
     border-width: .5em;
     text-align: center;;
-    box-shadow: 0 8px 16px 0 #424845
+    box-shadow: 0 8px 16px 0 #222423
   }
+
+.cardImg {
+  box-shadow: 0 8px 16px 0 #000000;
+}
 
 .wrapper {
     border: solid #000000;
@@ -111,11 +112,6 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-right: 40em;
     margin-left: 40em;
-  }
-
-
-.cardImg {
-  box-shadow: 8 8px 16px 0 #000000;
 }
 
 .navBar {
@@ -124,18 +120,52 @@ body{
   font-size: 22px;
   color: black;
   padding: 1em;
+  background-color: white;
 }
 
 .homeNav {
   padding: 10px;
 }
 
+.homeNav:visited{
+  color: black;
+}
+
+.homeNav:hover{
+  text-decoration: overline;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+  
+}
+
 .galleryNav {
   padding: 10px;
 }
 
+.galleryNav:visited {
+  color: black;
+}
+
+.galleryNav:hover{
+  text-decoration: overline;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+  
+}
+
 .apptNav {
   padding: 10px;
+}
+
+.apptNav:visited{
+  color: black;
+}
+
+.apptNav:hover{
+  text-decoration: overline;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+  
 }
 
 .searchbar {
@@ -158,23 +188,22 @@ body{
 
 button {
 	box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #ffffff 5%, #2772b3 100%);
-	background-color:#b6c9e9;
-	border-radius:8px;
+	background-color:none;
 	display:inline-block;
 	cursor:pointer;
 	color:#000000;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size:18px;
+	font-size:14px;
 	font-weight:bold;
 	padding:4px 10px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
 }
 button:hover {
-	background:linear-gradient(to bottom, #245c8c 5%, #b6c9e9 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #c7c7c7 60%);
 	background-color:#245c8c;
 }
+
 button:active {
 	position:relative;
 	top:1px;
@@ -191,6 +220,25 @@ button:active {
 .detailsText {
   color: rgb(141, 156, 172)
 }
+
+.detailsBtn {
+  padding: 10px;
+  color: #5f5f5f;
+}
+
+.detailsBtn:visited{
+  color: black;
+}
+
+.detailsBtn:hover{
+  text-decoration: underline;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+}
+
+
+
+/* ///// */
 
 .App {
   text-align: center;
