@@ -61,6 +61,7 @@ function App() {
           <Home />
         </Route>  
         <Route exact path = "/gallery">
+          <br/>
           <Search searchArt={searchArt} handleSearch={handleSearch}/>
           <ArtList arts={displayedArts}/> 
         </Route>
@@ -68,6 +69,7 @@ function App() {
           <ArtDetail /> 
         </Route>
         <Route exact path = "/appointment" >
+          <br/>
           <Appointment onAddAppointment={handleAddAppointment} />
           {appointmentCards}
         </Route>

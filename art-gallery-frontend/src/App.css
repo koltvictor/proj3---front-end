@@ -62,6 +62,7 @@ body{
   font-size:24px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: lighter;
+  border-top: solid black;
 }
 
 .form {
@@ -88,6 +89,16 @@ body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.wrapper {
+  border: solid #000000;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px 0 #424845;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-right: 50em;
+  margin-left: 50em;
+}
+
 .appointmentCard {
     display: inline-block;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -95,7 +106,6 @@ body{
     padding: 15px;
     margin: 10px;
     border: solid #63627d;
-    border-width: .5em;
     text-align: center;;
     box-shadow: 0 8px 16px 0 #222423
   }
@@ -104,23 +114,14 @@ body{
   box-shadow: 0 8px 16px 0 #000000;
 }
 
-.wrapper {
-    border: solid #000000;
-    padding: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 16px 0 #424845;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-right: 40em;
-    margin-left: 40em;
-}
-
 .navBar {
-  text-align: center;
+  text-align: right;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 22px;
   color: black;
   padding: 1em;
   background-color: white;
+  border-bottom: solid black;
 }
 
 .homeNav {
